@@ -11,70 +11,102 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+
+    <!--FontAwesome for the icons-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>    
 </head>
 <style>
     .row {
-        border: 10px solid red;
+        border: 10px solid transparent;
+        height: 33%;
     }
     .col-sm, .col-sm-8, .col-sm-4, .col-sm-10{
         padding: 0;
-        border :5px solid blue;
+        border :5px solid transparent;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .iconost{
+        align-items: center;
     }
     .container{
         padding-left: 0;
         padding-right: 0;
+       
     }
-
+    .title{
+        justify-content: start;
+        
+    }
     .parrafo-cualidades{
-        display: inline-block;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .parrafoContact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .card-inline{
         display: inline-block;
     }
+    .imagen{
+        width: 372px;
+        height: 200px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+    }
+
 </style>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                Espacio foto
+                <img class="imagen" src="img/elliot-alderson.jpg" alt="Foto de Elliot Alderson">
             </div>
             <div class="col-sm">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-10">
+                        <div class="col-sm-10 iconost">
                             Elliot Alderson
                         </div>
-                        <div class="col-sm">
-                            Download logo
+                        <div class="col-sm iconost">
+                            <a href="https://google.com"><i class="fas fa-download"></i></a>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-10">
-                            Software Engineer
+                        <div class="col-sm-10 iconost">
+                            Software Engineer at AllSafe
                         </div>
-                        <div class="col-sm">
-                            Instagram logo
+                        <div class="col-sm iconost">
+                            <a href="https://google.com"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm">
-                            Home logo
+                        <div class="col-sm iconost">
+                            <a href="https://google.com"><i class="fas fa-home"></i></a>
                         </div>
-                        <div class="col-sm">
-                            resume logo
+                        <div class="col-sm iconost">
+                          <a href="https://google.com"><i class="fas fa-file"></i></a>  
                         </div>
-                        <div class="col-sm">
-                            Portfolio logo
+                        <div class="col-sm iconost">
+                           <a href="https://google.com"><i class="fas fa-book"></i></a> 
                         </div>
-                        <div class="col-sm">
-                            Contacts logo
+                        <div class="col-sm iconost">
+                           <a href="https://google.com"><i class="fas fa-id-badge"></i></a> 
                         </div>
-                        <div class="col-sm">
-                            Feedback logo
+                        <div class="col-sm iconost">
+                            <a href="https://google.com"><i class="far fa-comment-dots"></i></a>
                         </div>
-                        <div class="col-sm">
-                            Blog logo
+                        <div class="col-sm iconost">
+                            <a href="https://google.com"><i class="fab fa-blogger-b"></i></a>
                         </div>
                     </div>
                 </div>
@@ -82,16 +114,58 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-4">
-                  <h2>Cualidades</h2> 
-                  <p class="parrafo-cualidades"></p>
-                   <p class="parrafo-cualidades"></p> 
-                  <p class="parrafo-cualidades"></p>
+            <div class="col-sm-8">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm title">
+                          <h2>Cualidades</h2>
+                        </div>
+                      </div>
+                    <div class="row">
+                      <div class="col-sm parrafo-cualidades">
+                        <i class="far fa-clock"></i>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of 
+                            a page when looking at its layout.
+                          </p>
+                      </div>
+                      <div class="col-sm parrafo-cualidades">
+                        <i class="fas fa-cogs"></i>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of 
+                            a page when looking at its layout.
+                          </p>
+                      </div>
+                      <div class="col-sm parrafo-cualidades">
+                        <i class="fas fa-pencil-alt"></i>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of 
+                            a page when looking at its layout.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                  
             </div>
             <div class="col-sm">
                 <div class="card">
                     <div class="card-body">
-                      Contact information
+                      <h2>Contact</h2>
+                      <p class="parrafoContact">
+                        <span>NAME:</span>  
+                        <span>Samuel F. Anderson</span> <br>
+                        <span>BIRTH DATE:</span> 
+                        <span>03/12/1980</span> <br>
+                        <span>ADDRESS:</span> 
+                        <span>1234, Direct drive, Daytona Beach, Fl, USA </span> <br>
+                        <span> PHONE:</span>
+                        <span>1 234 567 89 10 </span> <br>
+                        <span>EMAIL:</span> 
+                        <span>james@anderson.com  </span> 
+                      </p>
                     </div>
                   </div>
             </div>
